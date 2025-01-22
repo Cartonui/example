@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/registration.css">
+    <title>ВФС - Регистрация</title>
+</head>
+<body>
+    <header class="wrapper">
+        <div class="left-block-header">
+            <img src="assets/image/YPEC.png" alt="Логотип">
+        </div>
+        <div class="right-block-nav">
+            <nav class="navigation">
+                <a href="index.html">Главная</a>
+                <a href="index-light.html">Главная-светлая</a>
+                <a href="registration.html">Регистрация</a>
+                <a href="competition.html">Конкурс</a>
+                <a href="account.html">Личный кабинет</a>
+                <a href="404.html">Страница не найдена</a>
+                <a href="schedule.html">Расписание</a>
+            </nav>
+            <!-- Бургер меню -->
+            <div class="burger">
+                <input type="checkbox" id="menu-toggle">
+                <nav class="menu">
+                    <a href="index.html">Главная</a>
+                    <a href="index-light.html">Главная-светлая</a>
+                    <a href="registration.html">Регистрация</a>
+                    <a href="competition.html">Конкурс</a>
+                    <a href="account.html">Личный кабинет</a>
+                    <a href="404.html">Страница не найдена</a>
+                    <a href="schedule.html">Расписание</a>
+                </nav>
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="commom-main">
+            <h1>Регистрация</h1>
+            <form>
+                <label for="email">Email: </label>
+                <input type="email" id="email" required placeholder="example@gmail.com">
+                <label for="name">Имя: </label>
+                <input type="text" id="name" required placeholder="Имя..">
+                <label for="surname">Фамилия: </label>
+                <input type="text" id="surname" required placeholder="Фамилия..">
+                <label for="age">Возраст: </label>
+                <input type="number" id="age" required placeholder="Возраст.." min="1" max="100">
+                <label for="gender">Пол: </label>
+                <select name="" id="gender">
+                    <option value="woman">Женский</option>
+                    <option value="man">Мужской</option>
+                </select>
+                <label for="password">Пароль: </label>
+                <input type="password" id="password" required placeholder="********">
+                <label for="password_2">Повторите пароль: </label>
+                <input type="password" id="password_2" required placeholder="********">
+                <label for="photo">Фото: </label>
+                <input type="file" id="photo" required accept="image/*">
+                <div class="block-order-checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Соглашение на обработку данных</label>
+                </div>
+                <div class="block-submit">
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="foot" id="foot">
+        <div class="left-block-foot">
+            <p>Наша почта: <a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+            <p>Наш телефон: <a href="tel:74842234567">7 (4842) 23-45-67</a></p>
+        </div>
+        <div class="right-block-foot">
+            <h3>Навигация:</h3>
+            <a href="index.html">Главная</a>
+            <a href="index-light.html">Главная-светлая</a>
+            <a href="registration.html">Регистрация</a>
+            <a href="competition.html">Конкурс</a>
+            <a href="account.html">Личный кабинет</a>
+            <a href="404.html">Страница не найдена</a>
+            <a href="schedule.html">Расписание</a>
+        </div>
+     </footer>
+</body>
+</html>
