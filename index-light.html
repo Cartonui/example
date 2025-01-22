@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/index-light.css">
+    <title>ВФС - Всемирный Фестиваль Семей</title>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="wrapper">
+        <div class="left-block-header">
+            <img src="assets/image/YPEC.png" alt="Логотип">
+        </div>
+        <div class="right-block-nav">
+            <nav class="navigation">
+                <a href="registration.html">Регистрация</a>
+                <a href="#login">Авторизация</a>
+                <a href="account.html">Личный кабинет</a>
+                <a href="#about">О нас</a>
+                <a href="#events">Конкурсы</a>
+                <a href="#search">Поиск</a>
+                <a href="#foot">Контакты</a>
+                <a href="index.html">Тема</a>
+            </nav>
+            <!-- Бургер меню -->
+            <div class="burger">
+                <input type="checkbox" id="menu-toggle">
+                <nav class="menu">
+                    <a href="registration.html">Регистрация</a>
+                    <a href="#login">Авторизация</a>
+                    <a href="account.html">Личный кабинет</a>
+                    <a href="#about">О нас</a>
+                    <a href="#events">Конкурсы</a>
+                    <a href="#search">Поиск</a>
+                    <a href="#foot">Контакты</a>
+                    <a href="index-light.html">Тема</a>
+                </nav>
+                <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            </div>
+        </div>
+    </header>
+    <!-- Секция со слайдером -->
+     <section class="slider-section">
+        <h2>Слайдер</h2>
+        <div class="slider">
+            <img src="assets/image/photo.jpg" alt="">
+            <div class="block-controls">
+                <input type="radio" name="point" id="slide1" checked>
+                <input type="radio" name="point" id="slide2">
+                <input type="radio" name="point" id="slide3">
+            </div>
+            <div class="block-information">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste ullam nam, amet non sapiente autem eos hic expedita ipsam temporibus quisquam? Dolor nobis unde nulla sapiente minima tenetur error quaerat!</p>
+                <img src="assets/image/graphics.png" alt="">
+                <button>Подробнее</button>
+            </div>
+        </div>
+     </section>
+
+     <!-- Авторизация -->
+      <section class="login" id="login">
+        <div class="common-block-login">
+            <h2>Авторизация</h2>
+            <form>
+                <label for="email_login">Email: </label>
+                <input type="email" id="email_login" placeholder="example@gmail.com">
+                <label for="pass_login">Пароль: </label>
+                <input type="password" id="pass_login" placeholder="********">
+                <div class="block-link-login">
+                    <a href="#">Забыли пароль</a>
+                    <button>Войти</button>
+                </div>
+            </form>
+        </div>
+      </section>
+
+      <!-- О нас -->
+       <section class="about" id="about">
+        <h2>О нас</h2>
+        <div class="common-block-about">
+            <img src="assets/image/6dae06aa2b09e213d5a55d4e067361fd.png" alt="Фотография">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam exercitationem blanditiis tenetur est ea deleniti, dignissimos inventore consequatur quas porro temporibus, harum commodi, minus alias facilis nesciunt debitis. Velit, ipsa.</p>
+        </div>
+       </section>
+
+    <!-- Видеоролик -->
+     <section class="section-video">
+        <h2>Наш видеоролик</h2>
+        <video src="assets/video/горы.mp4" controls></video>
+     </section>
+<!-- Секция с карточками -->
+     <section class="events" id="events">
+        <h2>Наши Конкурсы</h2>
+        <div class="common-block-event">
+            <div class="row">
+                <!-- Первая карточка -->
+                <div class="card">
+                    <h3>Название</h3>
+                    <img src="assets/image/photo.jpg" alt="Мероприятие">
+                    <div class="block-info-card">
+                        <p><b>Описание: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a labore amet provident esse tempora deleniti exercitationem ut dolorem, illo, id fugiat asperiores ea, tenetur architecto aliquam obcaecati accusantium. Quidem.</p>
+                        <p><b>Кол-во людей: </b> 255</p>
+                        <p><b>Рейтинг: </b> 4.7</p>
+                    </div>  
+                    <button>Подробнее</button>
+                </div>
+                <!-- Вторая карточка --> 
+                <div class="card">
+                    <h3>Название</h3>
+                    <img src="assets/image/photo.jpg" alt="Мероприятие">
+                    <div class="block-info-card">
+                        <p><b>Описание: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a labore amet provident esse tempora deleniti exercitationem ut dolorem, illo, id fugiat asperiores ea, tenetur architecto aliquam obcaecati accusantium. Quidem.</p>
+                        <p><b>Кол-во людей: </b> 255</p>
+                        <p><b>Рейтинг: </b> 4.7</p>
+                    </div>  
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <!-- Вторая строка -->
+            <div class="row">
+                <!-- Третья карточка -->
+                <div class="card">
+                    <h3>Название</h3>
+                    <img src="assets/image/photo.jpg" alt="Мероприятие">
+                    <div class="block-info-card">
+                        <p><b>Описание: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a labore amet provident esse tempora deleniti exercitationem ut dolorem, illo, id fugiat asperiores ea, tenetur architecto aliquam obcaecati accusantium. Quidem.</p>
+                        <p><b>Кол-во людей: </b> 255</p>
+                        <p><b>Рейтинг: </b> 4.7</p>
+                    </div>  
+                    <button>Подробнее</button>
+                </div>
+                <!-- Четвертая карточка --> 
+                <div class="card">
+                    <h3>Название</h3>
+                    <img src="assets/image/photo.jpg" alt="Мероприятие">
+                    <div class="block-info-card">
+                        <p><b>Описание: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a labore amet provident esse tempora deleniti exercitationem ut dolorem, illo, id fugiat asperiores ea, tenetur architecto aliquam obcaecati accusantium. Quidem.</p>
+                        <p><b>Кол-во людей: </b> 255</p>
+                        <p><b>Рейтинг: </b> 4.7</p>
+                    </div>  
+                    <button>Подробнее</button>
+                </div>
+            </div>
+            <!-- Третья строка -->
+            <div class="row">
+                <!-- Пятая карточка -->
+                <div class="card">
+                    <h3>Название</h3>
+                    <img src="assets/image/photo.jpg" alt="Мероприятие">
+                    <div class="block-info-card">
+                        <p><b>Описание: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a labore amet provident esse tempora deleniti exercitationem ut dolorem, illo, id fugiat asperiores ea, tenetur architecto aliquam obcaecati accusantium. Quidem.</p>
+                        <p><b>Кол-во людей: </b> 255</p>
+                        <p><b>Рейтинг: </b> 4.7</p>
+                    </div>  
+                    <button>Подробнее</button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- Поиск -->
+      <section class="section-search" id="search">
+        <div class="common-block-search">
+            <h2>Найти информацию</h2>
+            <form>
+                <label for="search_form">Поиск: </label>
+                <input type="text" id="search_form" placeholder="Введите запрос..">
+                <div class="block-control-seacrh">
+                    <button>Начать</button>
+                </div>
+            </form>
+        </div>
+      </section>
+<!-- Отзывы -->
+    <section class="review-section">
+        <h2>Отзывы</h2>
+        <div class="common-block-review">
+            <div class="card-review">
+                <h3>Имя Автора</h3>
+                <img src="assets/image/photo.jpg" alt="Фото профиля" class="review-img">
+                <div class="block-info-card-review">
+                    <p class="data-review"><b>Дата: </b>01.02.2025</p>
+                    <p><b>Описание: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a labore amet provident esse tempora deleniti exercitationem ut dolorem, illo, id fugiat asperiores ea, tenetur architecto aliquam obcaecati accusantium. Quidem.</p>
+                </div>  
+                <button>Подробнее</button>
+            </div>
+            <div class="card-review">
+                <h3>Имя Автора</h3>
+                <img src="assets/image/photo.jpg" alt="Фото профиля" class="review-img">
+                <div class="block-info-card-review">
+                    <p class="data-review"><b>Дата: </b>01.02.2025</p>
+                    <p><b>Описание: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a labore amet provident esse tempora deleniti exercitationem ut dolorem, illo, id fugiat asperiores ea, tenetur architecto aliquam obcaecati accusantium. Quidem.</p>
+                </div>  
+                <button>Подробнее</button>
+            </div>
+            <div class="card-review">
+                <h3>Имя Автора</h3>
+                <img src="assets/image/photo.jpg" alt="Фото профиля" class="review-img">
+                <div class="block-info-card-review">
+                    <p class="data-review"><b>Дата: </b>01.02.2025</p>
+                    <p><b>Описание: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a labore amet provident esse tempora deleniti exercitationem ut dolorem, illo, id fugiat asperiores ea, tenetur architecto aliquam obcaecati accusantium. Quidem.</p>
+                </div>  
+                <button>Подробнее</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Рассылка -->
+     <section class="order-section">
+         <div class="common-order">
+            <h2>Подписка на рассылку</h2>
+            <form>
+                <label for="email_order">Email: </label>
+                <input type="email" id="email_order" placeholder="example@gmail.com">
+                <div class="block-order-checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Соглашение на обработку данных</label>
+                </div>
+                <div class="block-link-order">
+                    <button>Войти</button>
+                </div> 
+            </form>
+        </div>
+     </section>
+
+     <footer class="foot" id="foot">
+        <div class="left-block-foot">
+            <p>Наша почта: <a href="mailto:family@cosmos.ru">family@cosmos.ru</a></p>
+            <p>Наш телефон: <a href="tel:74842234567">7 (4842) 23-45-67</a></p>
+        </div>
+        <div class="right-block-foot">
+            <h3>Навигация:</h3>
+            <a href="index.html">Главная</a>
+            <a href="index-light.html">Главная-светлая</a>
+            <a href="registration.html">Регистрация</a>
+            <a href="competition.html">Конкурс</a>
+            <a href="account.html">Личный кабинет</a>
+            <a href="404.html">Страница не найдена</a>
+            <a href="schedule.html">Расписание</a>
+        </div>
+     </footer>
+</body>
+</html>
