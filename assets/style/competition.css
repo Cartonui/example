@@ -188,6 +188,24 @@ form label {
     flex-direction: column;
 }
 
+/* Оформление при печати */
+@media print {
+    .wrapper {
+        display: none;
+    }
+    .block img {
+        filter: grayscale(100%);
+        box-shadow: none;
+    }
+    .block p {
+        border: 2px solid black;
+    }
+    .foot {
+        display: none;
+    }
+}
+
+
 @media (max-width: 1280px) {
     .navigation {
         display: none;
