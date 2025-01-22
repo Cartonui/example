@@ -1,0 +1,262 @@
+/* Общее оформление */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Переменные */
+:root {
+    --background-black: #000;
+    --background-gray: #242424;
+    --background-white: #fff;
+    --color-white: #fff;
+    --black-shadow: 0 0 20px 0 #000 inset, 0 0 20px 0 #000;
+    --white-shadow: 0 0 20px 0 #fff inset, 0 0 20px 0 #fff;    
+}
+/* Оформление общих элементов */
+section {
+    padding: 5%;
+    background-color: var(--background-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section h2 {
+    font-size: 3.8vh;
+    color: var(--color-white);
+}
+
+img {
+    border-radius: 32px;
+    border: 2px solid;
+    box-shadow: var(--black-shadow);
+}
+button {
+    height: 50px;
+    width: 150px;
+    background: coral;
+    border: none;
+    border-radius: 16px;
+    margin-top: 5%;
+    font-size: 2vh;
+}
+button:hover {
+    background-color: rgb(186, 94, 60); 
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    height: 40px;
+}
+form label {
+    font-size: 2.8vh;
+}
+
+/* Оформление шапки сайта */
+.wrapper {
+    background-color: var(--background-black);
+    height: 75px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.left-block-header {
+    margin-left: 50px;
+}
+
+/* Оформление логотипа */
+.left-block-header img {
+    height: 50px;
+    max-width: 100%;
+    border: none;
+}
+
+
+/* Оформление навигации */
+.right-block-nav {
+    margin-right: 50px;
+}
+.navigation {
+    display: flex;
+    gap: 20px;
+}
+.navigation a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.navigation a:hover {
+    font-weight: bold;
+}
+
+
+/* Бургер меню */
+.menu {
+    display: none;
+    background: var(--background-white);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+}
+.menu a:hover {
+    background: #adacac;
+}
+
+
+.menu a:last-child {
+    border-bottom: none;
+}
+.menu-icon {
+    cursor: pointer;
+    color: var(--color-white);
+    font-size: 2.4vh;
+    display: none;
+}
+#menu-toggle {
+    display: none;
+}
+#menu-toggle:checked + .menu {
+    display: block;
+}
+/* Основной контент */
+.main {
+    background: var(--background-gray);
+}
+.main h1 {
+    color: var(--color-white);
+    font-size: 2em;
+    padding-bottom: 5%;
+}
+.main h2 {
+    font-size: 1.8em;
+}
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    margin: 5%;
+}
+
+.block img {
+    max-width: 100%;
+    height: 350px;
+}
+.block p {
+    background-color: #fff;
+    border-radius: 32px;
+    width: 400px;
+    padding: 5%;
+    font-size: 2vh;
+    box-shadow: var(--white-shadow);
+}
+
+
+
+/* Подвал */
+.foot {
+    background: var(--background-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 2%;
+    gap: 50px;
+}
+.foot a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+.foot a:hover {
+    font-weight: bold;
+}
+.right-block-foot {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1280px) {
+    .navigation {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .block {
+        flex-direction: column;
+    }
+    .main h1 {
+        font-size: 1.8em;
+    }
+    .main h2 {
+        padding: 5%;
+        font-size: 1.6em;
+    }
+    .block p {
+        font-size: 2vh;
+    }
+}
+
+
+@media (max-width: 900px) {
+    /* Шапка */
+    .navigation {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .block {
+        flex-direction: column;
+    }
+    .block img {
+        height: 300px;
+    }
+    .block p {
+        font-size: 1.6vh;
+    }
+    .main h1 {
+        font-size: 1.8em;
+    }
+    .main h2 {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width: 680px) {
+    .navigation {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .block {
+        flex-direction: column;
+    }
+    .block img {
+        height: 200px;
+    }
+    .block p {
+        width: 250px;
+        font-size: 1.4vh;
+    }
+    .main h1 {
+        font-size: 1.6em;
+    }
+    .main h2 {
+        font-size: 1.2em;
+    }
+}
